@@ -1,3 +1,4 @@
+#just a selenium automation with python to login in facebook
 import time
 from selenium import webdriver
 def fblogin():
