@@ -1,3 +1,4 @@
+#python selenium code to automate login and take screen shot on required pages.
 import time
 from selenium import webdriver
 
@@ -16,6 +17,7 @@ login()
 if driver.find_element_by_xpath('//*[@id="menu"]/div[2]/div/ul[2]/li/a'):
     x=driver.find_element_by_xpath('//*[@id="menu"]/div[2]/div/ul[2]/li/a')
     x.click()
+    #taking screenshot of the page and saving to the directory.
     driver.save_screenshot("screenshot.png")
 
 time.sleep(100)
